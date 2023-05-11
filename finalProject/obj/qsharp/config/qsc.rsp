@@ -1,0 +1,49 @@
+--proj
+    "/Users/khaledkamal/Downloads/Lab9/Lab9"
+--input
+    "/Users/khaledkamal/Downloads/Lab9/Lab9.qs"
+    "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
+--output
+    "/Users/khaledkamal/Downloads/Lab9/obj/qsharp/"
+--references
+    "/Users/khaledkamal/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.BondSchemas.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QsCompilationManager.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QsCompiler.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QsCore.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QsDataStructures.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QsDocumentationParser.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.qsharp.core/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QSharp.Core.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.qsharp.foundation/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QSharp.Foundation.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QsOptimizations.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QsSyntaxProcessor.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QsTextProcessor.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.QsTransformations.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.runtime.core/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.Runtime.Core.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.simulators/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.Simulation.Common.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.simulators/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.Simulation.QCTraceSimulatorRuntime.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.simulators/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.Simulators.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.standard/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.Standard.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.targets.interfaces/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.Targets.Interfaces.dll"
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.xunit/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.Xunit.dll"
+    "/Users/khaledkamal/.nuget/packages/nuget.frameworks/5.0.0/lib/netstandard2.0/NuGet.Frameworks.dll"
+    "/Users/khaledkamal/.nuget/packages/numsharp/0.20.5/lib/netstandard2.0/NumSharp.Core.dll"
+    "/Users/khaledkamal/.nuget/packages/xunit.abstractions/2.0.3/lib/netstandard2.0/xunit.abstractions.dll"
+    "/Users/khaledkamal/.nuget/packages/xunit.assert/2.4.1/lib/netstandard1.1/xunit.assert.dll"
+    "/Users/khaledkamal/.nuget/packages/xunit.extensibility.core/2.4.1/lib/netstandard1.1/xunit.core.dll"
+    "/Users/khaledkamal/.nuget/packages/xunit.extensibility.execution/2.4.1/lib/netstandard1.1/xunit.execution.dotnet.dll"
+--load
+    "/Users/khaledkamal/.nuget/packages/microsoft.quantum.csharpgeneration/0.25.218240/build//../lib/netstandard2.1/Microsoft.Quantum.CSharpGeneration.dll"
+--runtime
+    FullComputation
+--skip-targeting
+--skip-monomorphization
+--package-load-fallback-folders
+    "/Users/khaledkamal/Downloads/Lab9/bin/Debug/net6.0/"
+--assembly-properties
+    DocsPackageId:Lab9
+    ExecutionTarget:Any
+    AssemblyName:Lab9
+    ProcessorArchitecture:Unspecified
+    TargetCapability:FullComputation
+    QSharpOutputType:QSharpLibrary
