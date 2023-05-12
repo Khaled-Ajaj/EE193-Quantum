@@ -1,10 +1,10 @@
 --proj
-    "/Users/khaledkamal/Downloads/Lab9/Lab9"
+    "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9"
 --input
-    "/Users/khaledkamal/Downloads/Lab9/Lab9.qs"
-    "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
+    "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9.qs"
+    "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
 --output
-    "/Users/khaledkamal/Downloads/Lab9/obj/qsharp/"
+    "/Users/khaledkamal/Documents/ee193-quantum/finalProject/obj/qsharp/"
 --references
     "/Users/khaledkamal/.nuget/packages/microsoft.bcl.asyncinterfaces/1.1.0/ref/netstandard2.1/Microsoft.Bcl.AsyncInterfaces.dll"
     "/Users/khaledkamal/.nuget/packages/microsoft.quantum.compiler/0.25.218240/lib/netstandard2.1/Microsoft.Quantum.BondSchemas.dll"
@@ -39,7 +39,7 @@
 --skip-targeting
 --skip-monomorphization
 --package-load-fallback-folders
-    "/Users/khaledkamal/Downloads/Lab9/bin/Debug/net6.0/"
+    "/Users/khaledkamal/Documents/ee193-quantum/finalProject/bin/Debug/net6.0/"
 --assembly-properties
     DocsPackageId:Lab9
     ExecutionTarget:Any

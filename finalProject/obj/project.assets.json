@@ -7634,11 +7634,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "/Users/khaledkamal/Downloads/Lab9/Lab9.csproj",
+      "projectUniqueName": "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9.csproj",
       "projectName": "Lab9",
-      "projectPath": "/Users/khaledkamal/Downloads/Lab9/Lab9.csproj",
+      "projectPath": "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9.csproj",
       "packagesPath": "/Users/khaledkamal/.nuget/packages/",
-      "outputPath": "/Users/khaledkamal/Downloads/Lab9/obj/",
+      "outputPath": "/Users/khaledkamal/Documents/ee193-quantum/finalProject/obj/",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "/Users/khaledkamal/.nuget/NuGet/NuGet.Config"

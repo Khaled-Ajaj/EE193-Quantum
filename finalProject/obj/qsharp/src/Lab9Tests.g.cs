@@ -14,142 +14,28 @@ using Microsoft.Quantum.Intrinsic;
 using Microsoft.Quantum.Intrinsic.Interfaces;
 using Microsoft.Quantum.Simulation.Core;
 
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"ReverseModExp\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":16,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"A\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":10}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"B\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":3,\"Column\":9},\"Item2\":{\"Line\":3,\"Column\":10}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Input\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":4,\"Column\":9},\"Item2\":{\"Line\":4,\"Column\":14}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Output\"]},\"Type\":{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":5,\"Column\":9},\"Item2\":{\"Line\":5,\"Column\":15}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]},{\"Case\":\"ArrayType\",\"Fields\":[{\"Case\":\"Qubit\"}]}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"ReverseModExp\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":16,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"RunModExpTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Guess\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":14}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"NumberToFactor\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":3,\"Column\":9},\"Item2\":{\"Line\":3,\"Column\":23}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"RunModExpTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"RunSubroutineTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Transparent\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":60,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Guess\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":14}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"NumberToFactor\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":3,\"Column\":9},\"Item2\":{\"Line\":3,\"Column\":23}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Period\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":4,\"Column\":9},\"Item2\":{\"Line\":4,\"Column\":15}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"Tolerance\"]},\"Type\":{\"Case\":\"Double\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":5,\"Column\":9},\"Item2\":{\"Line\":5,\"Column\":18}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Int\"},{\"Case\":\"Double\"}]]},\"ReturnType\":{\"Case\":\"Bool\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"RunSubroutineTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":60,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise1ModExpTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Diagnostics\",\"Name\":\"Test\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]},\"Argument\":{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"QuantumSimulator\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":7},\"Item2\":{\"Line\":1,\"Column\":25}}]}},\"Offset\":{\"Item1\":82,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}},{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":83,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise1ModExpTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":83,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise2SubroutineTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Diagnostics\",\"Name\":\"Test\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]},\"Argument\":{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"QuantumSimulator\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":7},\"Item2\":{\"Line\":1,\"Column\":25}}]}},\"Offset\":{\"Item1\":93,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}},{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Transparent\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":94,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise2SubroutineTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":94,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":34}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise3ConvergentTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Diagnostics\",\"Name\":\"Test\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]},\"Argument\":{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"QuantumSimulator\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":7},\"Item2\":{\"Line\":1,\"Column\":25}}]}},\"Offset\":{\"Item1\":119,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}},{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":120,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":33}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise3ConvergentTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":120,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":33}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise4PeriodTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Diagnostics\",\"Name\":\"Test\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]},\"Argument\":{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"QuantumSimulator\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":7},\"Item2\":{\"Line\":1,\"Column\":25}}]}},\"Offset\":{\"Item1\":159,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}},{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Transparent\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":160,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise4PeriodTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":160,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":30}},\"Documentation\":[]}")]
-[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Function\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise5FactorTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Diagnostics\",\"Name\":\"Test\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]},\"Argument\":{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"QuantumSimulator\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":7},\"Item2\":{\"Line\":1,\"Column\":25}}]}},\"Offset\":{\"Item1\":169,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}},{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Opaque\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":170,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":29}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
-[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"Exercise5FactorTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs\",\"Position\":{\"Item1\":170,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":10},\"Item2\":{\"Line\":1,\"Column\":29}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"RunIntToQubitTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Transparent\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":20,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"testNum\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":2,\"Column\":9},\"Item2\":{\"Line\":2,\"Column\":16}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"Int\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"RunIntToQubitTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":20,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":28}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"runAdderTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Transparent\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"num1\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":24},\"Item2\":{\"Line\":1,\"Column\":28}}}]},{\"Case\":\"QsTupleItem\",\"Fields\":[{\"VariableName\":{\"Case\":\"ValidName\",\"Fields\":[\"num2\"]},\"Type\":{\"Case\":\"Int\"},\"InferredInformation\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Position\":{\"Case\":\"Null\"},\"Range\":{\"Item1\":{\"Line\":1,\"Column\":35},\"Item2\":{\"Line\":1,\"Column\":39}}}]}]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"Int\"},{\"Case\":\"Int\"}]]},\"ReturnType\":{\"Case\":\"Int\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"runAdderTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":40,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":23}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"IntToQubitTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Diagnostics\",\"Name\":\"Test\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]},\"Argument\":{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"QuantumSimulator\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":7},\"Item2\":{\"Line\":1,\"Column\":25}}]}},\"Offset\":{\"Item1\":85,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}},{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Transparent\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":86,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"IntToQubitTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":86,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":25}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"fullAdderTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Diagnostics\",\"Name\":\"Test\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]},\"Argument\":{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"QuantumSimulator\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":7},\"Item2\":{\"Line\":1,\"Column\":25}}]}},\"Offset\":{\"Item1\":94,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}},{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Transparent\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":95,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"fullAdderTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":95,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":24}},\"Documentation\":[]}")]
+[assembly: CallableDeclaration("{\"Kind\":{\"Case\":\"Operation\"},\"QualifiedName\":{\"Namespace\":\"Lab9\",\"Name\":\"adderTest\"},\"Attributes\":[{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Diagnostics\",\"Name\":\"Test\",\"Range\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]}}]},\"TypeIdRange\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":2},\"Item2\":{\"Line\":1,\"Column\":6}}]},\"Argument\":{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"QuantumSimulator\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Value\",\"Fields\":[{\"Item1\":{\"Line\":1,\"Column\":7},\"Item2\":{\"Line\":1,\"Column\":25}}]}},\"Offset\":{\"Item1\":138,\"Item2\":4},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}},{\"TypeId\":{\"Case\":\"Value\",\"Fields\":[{\"Namespace\":\"Microsoft.Quantum.Targeting\",\"Name\":\"RequiresCapability\",\"Range\":{\"Case\":\"Null\"}}]},\"TypeIdRange\":{\"Case\":\"Null\"},\"Argument\":{\"Item1\":{\"Case\":\"ValueTuple\",\"Fields\":[[{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Transparent\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Full\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},{\"Item1\":{\"Case\":\"StringLiteral\",\"Fields\":[\"Inferred automatically by the compiler.\",[]]},\"Item2\":[],\"Item3\":{\"Case\":\"String\"},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}}]]},\"Item2\":[],\"Item3\":{\"Case\":\"TupleType\",\"Fields\":[[{\"Case\":\"String\"},{\"Case\":\"String\"},{\"Case\":\"String\"}]]},\"Item4\":{\"IsMutable\":false,\"HasLocalQuantumDependency\":false},\"Item5\":{\"Case\":\"Null\"}},\"Offset\":{\"Item1\":0,\"Item2\":0},\"Comments\":{\"OpeningComments\":[],\"ClosingComments\":[]}}],\"Modifiers\":{\"Access\":{\"Case\":\"DefaultAccess\"}},\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":139,\"Item2\":4},\"SymbolRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"ArgumentTuple\":{\"Case\":\"QsTuple\",\"Fields\":[[]]},\"Signature\":{\"TypeParameters\":[],\"ArgumentType\":{\"Case\":\"UnitType\"},\"ReturnType\":{\"Case\":\"UnitType\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}}},\"Documentation\":[]}")]
+[assembly: SpecializationDeclaration("{\"Kind\":{\"Case\":\"QsBody\"},\"TypeArguments\":{\"Case\":\"Null\"},\"Information\":{\"Characteristics\":{\"Case\":\"EmptySet\"},\"InferredInformation\":{\"IsSelfAdjoint\":false,\"IsIntrinsic\":false}},\"Parent\":{\"Namespace\":\"Lab9\",\"Name\":\"adderTest\"},\"Attributes\":[],\"SourceFile\":\"/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs\",\"Position\":{\"Item1\":139,\"Item2\":4},\"HeaderRange\":{\"Item1\":{\"Line\":1,\"Column\":11},\"Item2\":{\"Line\":1,\"Column\":20}},\"Documentation\":[]}")]
 #line hidden
 namespace Lab9
 {
-    [SourceLocation("/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs", OperationFunctor.Body, 17, 41)]
-    public partial class ReverseModExp : Operation<(Int64,Int64,IQArray<Qubit>,IQArray<Qubit>), QVoid>, ICallable
+    [SourceLocation("/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs", OperationFunctor.Body, 21, 41)]
+    public partial class RunIntToQubitTest : Operation<Int64, QVoid>, ICallable
     {
-        public ReverseModExp(IOperationFactory m) : base(m)
+        public RunIntToQubitTest(IOperationFactory m) : base(m)
         {
         }
 
-        public class In : QTuple<(Int64,Int64,IQArray<Qubit>,IQArray<Qubit>)>, IApplyData
-        {
-            public In((Int64,Int64,IQArray<Qubit>,IQArray<Qubit>) data) : base(data)
-            {
-            }
-
-            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits
-            {
-                get
-                {
-                    return Qubit.Concat(((IApplyData)Data.Item3)?.Qubits, ((IApplyData)Data.Item4)?.Qubits);
-                }
-            }
-        }
-
-        String ICallable.Name => "ReverseModExp";
-        String ICallable.FullName => "Lab9.ReverseModExp";
-        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> Microsoft__Quantum__Arithmetic__LittleEndian
-        {
-            get;
-            set;
-        }
-
-        protected ICallable Length__
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<(Int64,Int64,Int64), Int64> Microsoft__Quantum__Math__ExpModI
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<(Int64,Int64,Microsoft.Quantum.Arithmetic.LittleEndian)> Microsoft__Quantum__Arithmetic__MultiplyByModularInteger
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__X
-        {
-            get;
-            set;
-        }
-
-        public override Func<(Int64,Int64,IQArray<Qubit>,IQArray<Qubit>), QVoid> __Body__ => (__in__) =>
-        {
-            var (A,B,Input,Output) = __in__;
-#line 24 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var outputAsLE = new Microsoft.Quantum.Arithmetic.LittleEndian(Output);
-#line 25 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var inputSize = Input.Length;
-#line 27 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            foreach (var i in new QRange((inputSize - 1L), -(1L), 0L))
-#line hidden
-            {
-#line 29 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                var powerOfTwo = ((inputSize - 1L) - i);
-#line 30 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                var powerOfGuess = 2L.Pow(powerOfTwo);
-#line 32 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                var constant = Microsoft__Quantum__Math__ExpModI.Apply((A, powerOfGuess, B));
-#line 33 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                Microsoft__Quantum__Arithmetic__MultiplyByModularInteger.Adjoint.Controlled.Apply((new QArray<Qubit>(Input[i]), (constant, B, outputAsLE)));
-            }
-
-#line 37 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Intrinsic__X.Apply(Output[(Output.Length - 1L)]);
-#line hidden
-            return QVoid.Instance;
-        }
-
-        ;
-        public override void __Init__()
-        {
-            this.Microsoft__Quantum__Arithmetic__LittleEndian = this.__Factory__.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(global::Microsoft.Quantum.Arithmetic.LittleEndian));
-            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
-            this.Microsoft__Quantum__Math__ExpModI = this.__Factory__.Get<ICallable<(Int64,Int64,Int64), Int64>>(typeof(global::Microsoft.Quantum.Math.ExpModI));
-            this.Microsoft__Quantum__Arithmetic__MultiplyByModularInteger = this.__Factory__.Get<IUnitary<(Int64,Int64,Microsoft.Quantum.Arithmetic.LittleEndian)>>(typeof(global::Microsoft.Quantum.Arithmetic.MultiplyByModularInteger));
-            this.Microsoft__Quantum__Intrinsic__X = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.X));
-        }
-
-        public override IApplyData __DataIn__((Int64,Int64,IQArray<Qubit>,IQArray<Qubit>) data) => new In(data);
-        public override IApplyData __DataOut__(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, Int64 A, Int64 B, IQArray<Qubit> Input, IQArray<Qubit> Output)
-        {
-            return __m__.Run<ReverseModExp, (Int64,Int64,IQArray<Qubit>,IQArray<Qubit>), QVoid>((A, B, Input, Output));
-        }
-    }
-
-    [SourceLocation("/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs", OperationFunctor.Body, 41, 61)]
-    public partial class RunModExpTest : Operation<(Int64,Int64), QVoid>, ICallable
-    {
-        public RunModExpTest(IOperationFactory m) : base(m)
-        {
-        }
-
-        public class In : QTuple<(Int64,Int64)>, IApplyData
-        {
-            public In((Int64,Int64) data) : base(data)
-            {
-            }
-
-            System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits => null;
-        }
-
-        String ICallable.Name => "RunModExpTest";
-        String ICallable.FullName => "Lab9.RunModExpTest";
+        String ICallable.Name => "RunIntToQubitTest";
+        String ICallable.FullName => "Lab9.RunIntToQubitTest";
         protected ICallable<Double, Int64> Microsoft__Quantum__Math__Ceiling
         {
             get;
@@ -180,59 +66,61 @@ namespace Lab9
             set;
         }
 
+        protected ICallable<(Int64,IQArray<Qubit>), QVoid> intToQubits__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Microsoft.Quantum.Arithmetic.LittleEndian, Int64> Microsoft__Quantum__Arithmetic__MeasureInteger
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> Microsoft__Quantum__Arithmetic__LittleEndian
+        {
+            get;
+            set;
+        }
+
         protected ICallable Microsoft__Quantum__Canon__ApplyToEach
         {
             get;
             set;
         }
 
-        protected IUnitary<Qubit> Microsoft__Quantum__Intrinsic__H
+        protected ICallable<Qubit, QVoid> Reset__
         {
             get;
             set;
         }
 
-        protected ICallable<(Int64,Int64,IQArray<Qubit>,IQArray<Qubit>), QVoid> Exercise1_ModExp__
+        public override Func<Int64, QVoid> __Body__ => (__in__) =>
         {
-            get;
-            set;
-        }
-
-        protected ICallable<(Int64,Int64,IQArray<Qubit>,IQArray<Qubit>), QVoid> ReverseModExp__
-        {
-            get;
-            set;
-        }
-
-        protected IUnitary<IQArray<Qubit>> Microsoft__Quantum__Diagnostics__AssertAllZero
-        {
-            get;
-            set;
-        }
-
-        public override Func<(Int64,Int64), QVoid> __Body__ => (__in__) =>
-        {
-            var (Guess,NumberToFactor) = __in__;
-#line 46 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var outputSize = Microsoft__Quantum__Math__Ceiling.Apply(Microsoft__Quantum__Math__Lg.Apply(Microsoft__Quantum__Convert__IntAsDouble.Apply((NumberToFactor + 1L))));
+            var testNum = __in__;
+#line 25 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            var numBits = Microsoft__Quantum__Math__Ceiling.Apply(Microsoft__Quantum__Math__Lg.Apply(Microsoft__Quantum__Convert__IntAsDouble.Apply((testNum + 1L))));
 #line hidden
             {
-#line 47 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                var (input,output) = (Allocate__.Apply((outputSize * 2L)), Allocate__.Apply(outputSize));
+#line 26 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                var reg = Allocate__.Apply(numBits);
 #line hidden
                 bool __arg1__ = true;
                 try
                 {
-#line 49 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__H, input));
-#line 51 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    Exercise1_ModExp__.Apply((Guess, NumberToFactor, input, output));
-#line 52 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    ReverseModExp__.Apply((Guess, NumberToFactor, input, output));
-#line 54 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    Microsoft__Quantum__Canon__ApplyToEach.Apply((Microsoft__Quantum__Intrinsic__H, input));
-#line 56 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    Microsoft__Quantum__Diagnostics__AssertAllZero.Apply(QArray<Qubit>.Add(input, output));
+#line 28 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                    intToQubits__.Apply((testNum, reg));
+#line 29 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                    var measured = Microsoft__Quantum__Arithmetic__MeasureInteger.Apply(new Microsoft.Quantum.Arithmetic.LittleEndian(reg));
+#line 31 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                    Microsoft__Quantum__Canon__ApplyToEach.Apply((Reset__, reg));
+#line 33 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                    if ((measured != testNum))
+                    {
+#line 34 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                        throw new ExecutionFailException("measured integer is incorrect");
+                    }
                 }
 #line hidden
                 catch
@@ -246,9 +134,7 @@ namespace Lab9
                     if (__arg1__)
                     {
 #line hidden
-                        Release__.Apply(input);
-#line hidden
-                        Release__.Apply(output);
+                        Release__.Apply(reg);
                     }
                 }
             }
@@ -265,46 +151,52 @@ namespace Lab9
             this.Microsoft__Quantum__Convert__IntAsDouble = this.__Factory__.Get<ICallable<Int64, Double>>(typeof(global::Microsoft.Quantum.Convert.IntAsDouble));
             this.Allocate__ = this.__Factory__.Get<Allocate>(typeof(global::Microsoft.Quantum.Intrinsic.Allocate));
             this.Release__ = this.__Factory__.Get<Release>(typeof(global::Microsoft.Quantum.Intrinsic.Release));
+            this.intToQubits__ = this.__Factory__.Get<ICallable<(Int64,IQArray<Qubit>), QVoid>>(typeof(intToQubits));
+            this.Microsoft__Quantum__Arithmetic__MeasureInteger = this.__Factory__.Get<ICallable<Microsoft.Quantum.Arithmetic.LittleEndian, Int64>>(typeof(global::Microsoft.Quantum.Arithmetic.MeasureInteger));
+            this.Microsoft__Quantum__Arithmetic__LittleEndian = this.__Factory__.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(global::Microsoft.Quantum.Arithmetic.LittleEndian));
             this.Microsoft__Quantum__Canon__ApplyToEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEach<>));
-            this.Microsoft__Quantum__Intrinsic__H = this.__Factory__.Get<IUnitary<Qubit>>(typeof(global::Microsoft.Quantum.Intrinsic.H));
-            this.Exercise1_ModExp__ = this.__Factory__.Get<ICallable<(Int64,Int64,IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(Exercise1_ModExp));
-            this.ReverseModExp__ = this.__Factory__.Get<ICallable<(Int64,Int64,IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(ReverseModExp));
-            this.Microsoft__Quantum__Diagnostics__AssertAllZero = this.__Factory__.Get<IUnitary<IQArray<Qubit>>>(typeof(global::Microsoft.Quantum.Diagnostics.AssertAllZero));
+            this.Reset__ = this.__Factory__.Get<ICallable<Qubit, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Reset));
         }
 
-        public override IApplyData __DataIn__((Int64,Int64) data) => new In(data);
+        public override IApplyData __DataIn__(Int64 data) => new QTuple<Int64>(data);
         public override IApplyData __DataOut__(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, Int64 Guess, Int64 NumberToFactor)
+        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__, Int64 testNum)
         {
-            return __m__.Run<RunModExpTest, (Int64,Int64), QVoid>((Guess, NumberToFactor));
+            return __m__.Run<RunIntToQubitTest, Int64, QVoid>(testNum);
         }
     }
 
-    [SourceLocation("/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs", OperationFunctor.Body, 61, 84)]
-    public partial class RunSubroutineTest : Operation<(Int64,Int64,Int64,Double), Boolean>, ICallable
+    [SourceLocation("/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs", OperationFunctor.Body, 41, 87)]
+    public partial class runAdderTest : Operation<(Int64,Int64), Int64>, ICallable
     {
-        public RunSubroutineTest(IOperationFactory m) : base(m)
+        public runAdderTest(IOperationFactory m) : base(m)
         {
         }
 
-        public class In : QTuple<(Int64,Int64,Int64,Double)>, IApplyData
+        public class In : QTuple<(Int64,Int64)>, IApplyData
         {
-            public In((Int64,Int64,Int64,Double) data) : base(data)
+            public In((Int64,Int64) data) : base(data)
             {
             }
 
             System.Collections.Generic.IEnumerable<Qubit> IApplyData.Qubits => null;
         }
 
-        String ICallable.Name => "RunSubroutineTest";
-        String ICallable.FullName => "Lab9.RunSubroutineTest";
-        protected ICallable<(Int64,Int64), (Int64,Int64)> Exercise2_FindApproxPeriod__
+        String ICallable.Name => "runAdderTest";
+        String ICallable.FullName => "Lab9.runAdderTest";
+        protected ICallable<IQArray<Int64>, Int64> Microsoft__Quantum__Math__Max
         {
             get;
             set;
         }
 
-        protected ICallable<String, QVoid> Message__
+        protected ICallable<Double, Int64> Microsoft__Quantum__Math__Ceiling
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Double, Double> Microsoft__Quantum__Math__Lg
         {
             get;
             set;
@@ -316,75 +208,231 @@ namespace Lab9
             set;
         }
 
-        protected ICallable<Double, Int64> Microsoft__Quantum__Math__Round
+        protected Allocate Allocate__
         {
             get;
             set;
         }
 
-        protected ICallable<Double, Double> Microsoft__Quantum__Math__AbsD
+        protected Release Release__
         {
             get;
             set;
         }
 
-        protected ICallable<(Boolean,Boolean,String), QVoid> Microsoft__Quantum__Diagnostics__EqualityFactB
+        protected ICallable<(Int64,IQArray<Qubit>), QVoid> intToQubits__
         {
             get;
             set;
         }
 
-        public override Func<(Int64,Int64,Int64,Double), Boolean> __Body__ => (__in__) =>
+        protected ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid> adder__
         {
-            var (Guess,NumberToFactor,Period,Tolerance) = __in__;
-#line 68 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var (measurement,searchSpace) = Exercise2_FindApproxPeriod__.Apply((NumberToFactor, Guess));
-#line 69 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Message__.Apply("Measured 0, trying again...");
-#line 70 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if ((measurement == 0L))
+            get;
+            set;
+        }
+
+        protected ICallable Length__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Microsoft.Quantum.Arithmetic.LittleEndian, Int64> Microsoft__Quantum__Arithmetic__MeasureInteger
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian> Microsoft__Quantum__Arithmetic__LittleEndian
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Microsoft__Quantum__Canon__ApplyToEach
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Qubit, QVoid> Reset__
+        {
+            get;
+            set;
+        }
+
+        public override Func<(Int64,Int64), Int64> __Body__ => (__in__) =>
+        {
+            var (num1,num2) = __in__;
+#line 44 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            var maxVal = Microsoft__Quantum__Math__Max.Apply(new QArray<Int64>(num1, num2));
+#line 45 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            var numBits = 0L;
+#line 48 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            if ((maxVal == 0L))
             {
-#line 71 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                return false;
+#line 49 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                numBits = 1L;
+            }
+            else
+            {
+#line 52 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                numBits = Microsoft__Quantum__Math__Ceiling.Apply(Microsoft__Quantum__Math__Lg.Apply(Microsoft__Quantum__Convert__IntAsDouble.Apply((maxVal + 1L))));
             }
 
-#line 73 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var scaledMeasurement = ((Microsoft__Quantum__Convert__IntAsDouble.Apply(measurement) / Microsoft__Quantum__Convert__IntAsDouble.Apply(searchSpace)) * Microsoft__Quantum__Convert__IntAsDouble.Apply(Period));
-#line 74 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var nearestMultiple = Microsoft__Quantum__Math__Round.Apply(scaledMeasurement);
-#line 75 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var delta = Microsoft__Quantum__Math__AbsD.Apply((scaledMeasurement - Microsoft__Quantum__Convert__IntAsDouble.Apply(nearestMultiple)));
-#line 77 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Message__.Apply(String.Format("Measured {0}/{1} => {2}, delta = {3}", measurement, searchSpace, scaledMeasurement, delta));
-#line 78 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactB.Apply(((delta < Tolerance), true, "QFT failed, your measurement was too far from one of the expected values. It could just be (very) bad luck, so consider trying again if you think you have the correct implementation."));
-#line 79 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            return true;
+#line hidden
+            {
+#line 55 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                var reg1 = Allocate__.Apply(numBits);
+#line hidden
+                bool __arg1__ = true;
+                try
+                {
+#line hidden
+                    {
+#line 56 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                        var reg2 = Allocate__.Apply(numBits);
+#line hidden
+                        bool __arg2__ = true;
+                        try
+                        {
+#line hidden
+                            {
+#line 59 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                var res = Allocate__.Apply(numBits);
+#line hidden
+                                bool __arg3__ = true;
+                                try
+                                {
+#line hidden
+                                    {
+#line 60 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                        var carry = Allocate__.Apply(numBits);
+#line hidden
+                                        bool __arg4__ = true;
+                                        try
+                                        {
+#line 63 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            intToQubits__.Apply((num1, reg1));
+#line 64 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            intToQubits__.Apply((num2, reg2));
+#line 67 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            adder__.Apply((reg1, reg2, res, carry));
+#line 70 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            var totalSum = (IQArray<Qubit>)QArray<Qubit>.Add(res, new QArray<Qubit>(carry[(carry.Length - 1L)]));
+#line 72 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            var intSum = Microsoft__Quantum__Arithmetic__MeasureInteger.Apply(new Microsoft.Quantum.Arithmetic.LittleEndian(totalSum));
+#line 75 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            Microsoft__Quantum__Canon__ApplyToEach.Apply((Reset__, reg1));
+#line 76 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            Microsoft__Quantum__Canon__ApplyToEach.Apply((Reset__, reg2));
+#line 77 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            Microsoft__Quantum__Canon__ApplyToEach.Apply((Reset__, res));
+#line 78 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            Microsoft__Quantum__Canon__ApplyToEach.Apply((Reset__, carry));
+#line 81 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                            return intSum;
+                                        }
+#line hidden
+                                        catch
+                                        {
+                                            __arg4__ = false;
+                                            throw;
+                                        }
+#line hidden
+                                        finally
+                                        {
+                                            if (__arg4__)
+                                            {
+#line hidden
+                                                Release__.Apply(carry);
+                                            }
+                                        }
+                                    }
+                                }
+#line hidden
+                                catch
+                                {
+                                    __arg3__ = false;
+                                    throw;
+                                }
+#line hidden
+                                finally
+                                {
+                                    if (__arg3__)
+                                    {
+#line hidden
+                                        Release__.Apply(res);
+                                    }
+                                }
+                            }
+                        }
+#line hidden
+                        catch
+                        {
+                            __arg2__ = false;
+                            throw;
+                        }
+#line hidden
+                        finally
+                        {
+                            if (__arg2__)
+                            {
+#line hidden
+                                Release__.Apply(reg2);
+                            }
+                        }
+                    }
+                }
+#line hidden
+                catch
+                {
+                    __arg1__ = false;
+                    throw;
+                }
+#line hidden
+                finally
+                {
+                    if (__arg1__)
+                    {
+#line hidden
+                        Release__.Apply(reg1);
+                    }
+                }
+            }
         }
 
         ;
         public override void __Init__()
         {
-            this.Exercise2_FindApproxPeriod__ = this.__Factory__.Get<ICallable<(Int64,Int64), (Int64,Int64)>>(typeof(Exercise2_FindApproxPeriod));
-            this.Message__ = this.__Factory__.Get<ICallable<String, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Message));
+            this.Microsoft__Quantum__Math__Max = this.__Factory__.Get<ICallable<IQArray<Int64>, Int64>>(typeof(global::Microsoft.Quantum.Math.Max));
+            this.Microsoft__Quantum__Math__Ceiling = this.__Factory__.Get<ICallable<Double, Int64>>(typeof(global::Microsoft.Quantum.Math.Ceiling));
+            this.Microsoft__Quantum__Math__Lg = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.Lg));
             this.Microsoft__Quantum__Convert__IntAsDouble = this.__Factory__.Get<ICallable<Int64, Double>>(typeof(global::Microsoft.Quantum.Convert.IntAsDouble));
-            this.Microsoft__Quantum__Math__Round = this.__Factory__.Get<ICallable<Double, Int64>>(typeof(global::Microsoft.Quantum.Math.Round));
-            this.Microsoft__Quantum__Math__AbsD = this.__Factory__.Get<ICallable<Double, Double>>(typeof(global::Microsoft.Quantum.Math.AbsD));
-            this.Microsoft__Quantum__Diagnostics__EqualityFactB = this.__Factory__.Get<ICallable<(Boolean,Boolean,String), QVoid>>(typeof(global::Microsoft.Quantum.Diagnostics.EqualityFactB));
+            this.Allocate__ = this.__Factory__.Get<Allocate>(typeof(global::Microsoft.Quantum.Intrinsic.Allocate));
+            this.Release__ = this.__Factory__.Get<Release>(typeof(global::Microsoft.Quantum.Intrinsic.Release));
+            this.intToQubits__ = this.__Factory__.Get<ICallable<(Int64,IQArray<Qubit>), QVoid>>(typeof(intToQubits));
+            this.adder__ = this.__Factory__.Get<ICallable<(IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>,IQArray<Qubit>), QVoid>>(typeof(adder));
+            this.Length__ = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Core.Length<>));
+            this.Microsoft__Quantum__Arithmetic__MeasureInteger = this.__Factory__.Get<ICallable<Microsoft.Quantum.Arithmetic.LittleEndian, Int64>>(typeof(global::Microsoft.Quantum.Arithmetic.MeasureInteger));
+            this.Microsoft__Quantum__Arithmetic__LittleEndian = this.__Factory__.Get<ICallable<IQArray<Qubit>, Microsoft.Quantum.Arithmetic.LittleEndian>>(typeof(global::Microsoft.Quantum.Arithmetic.LittleEndian));
+            this.Microsoft__Quantum__Canon__ApplyToEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEach<>));
+            this.Reset__ = this.__Factory__.Get<ICallable<Qubit, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Reset));
         }
 
-        public override IApplyData __DataIn__((Int64,Int64,Int64,Double) data) => new In(data);
-        public override IApplyData __DataOut__(Boolean data) => new QTuple<Boolean>(data);
-        public static System.Threading.Tasks.Task<Boolean> Run(IOperationFactory __m__, Int64 Guess, Int64 NumberToFactor, Int64 Period, Double Tolerance)
+        public override IApplyData __DataIn__((Int64,Int64) data) => new In(data);
+        public override IApplyData __DataOut__(Int64 data) => new QTuple<Int64>(data);
+        public static System.Threading.Tasks.Task<Int64> Run(IOperationFactory __m__, Int64 num1, Int64 num2)
         {
-            return __m__.Run<RunSubroutineTest, (Int64,Int64,Int64,Double), Boolean>((Guess, NumberToFactor, Period, Tolerance));
+            return __m__.Run<runAdderTest, (Int64,Int64), Int64>((num1, num2));
         }
     }
 
-    [SourceLocation("/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs", OperationFunctor.Body, 84, 95)]
-    public partial class Exercise1ModExpTest : Operation<QVoid, QVoid>, ICallable
+    [SourceLocation("/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs", OperationFunctor.Body, 87, 96)]
+    public partial class IntToQubitTest : Operation<QVoid, QVoid>, ICallable
     {
-        public Exercise1ModExpTest(IOperationFactory m) : base(m)
+        public IntToQubitTest(IOperationFactory m) : base(m)
         {
         }
 
@@ -402,9 +450,9 @@ namespace Lab9
 
             [Xunit.Fact()]
             [Xunit.Trait("Target", "QuantumSimulator")]
-            [Xunit.Trait("Name", "Exercise1ModExpTest")]
-            public void Exercise1ModExpTest()
-#line 84 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
+            [Xunit.Trait("Name", "IntToQubitTest")]
+            public void IntToQubitTest()
+#line 87 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
             {
                 var sim = new Microsoft.Quantum.Simulation.Simulators.QuantumSimulator();
                 if (sim is Microsoft.Quantum.Simulation.Common.SimulatorBase baseSim && this.Output != null)
@@ -414,11 +462,11 @@ namespace Lab9
 
                 try
                 {
-                    sim.Execute<Exercise1ModExpTest, QVoid, QVoid>(QVoid.Instance);
+                    sim.Execute<IntToQubitTest, QVoid, QVoid>(QVoid.Instance);
                 }
                 catch
                 {
-#line 84 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
+#line 87 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
                     Xunit.Assert.True(false, "Q# Test failed. For details see the Standard output below.");
                 }
                 finally
@@ -431,9 +479,9 @@ namespace Lab9
             }
         }
 
-        String ICallable.Name => "Exercise1ModExpTest";
-        String ICallable.FullName => "Lab9.Exercise1ModExpTest";
-        protected ICallable<(Int64,Int64), QVoid> RunModExpTest__
+        String ICallable.Name => "IntToQubitTest";
+        String ICallable.FullName => "Lab9.IntToQubitTest";
+        protected ICallable<Int64, QVoid> RunIntToQubitTest__
         {
             get;
             set;
@@ -441,10 +489,14 @@ namespace Lab9
 
         public override Func<QVoid, QVoid> __Body__ => (__in__) =>
         {
-#line 86 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            RunModExpTest__.Apply((5L, 9L));
-#line 88 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            RunModExpTest__.Apply((7L, 15L));
+#line 88 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            RunIntToQubitTest__.Apply(0L);
+#line 89 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            RunIntToQubitTest__.Apply(5L);
+#line 90 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            RunIntToQubitTest__.Apply(273L);
+#line 91 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            RunIntToQubitTest__.Apply(1024L);
 #line hidden
             return QVoid.Instance;
         }
@@ -452,21 +504,21 @@ namespace Lab9
         ;
         public override void __Init__()
         {
-            this.RunModExpTest__ = this.__Factory__.Get<ICallable<(Int64,Int64), QVoid>>(typeof(RunModExpTest));
+            this.RunIntToQubitTest__ = this.__Factory__.Get<ICallable<Int64, QVoid>>(typeof(RunIntToQubitTest));
         }
 
         public override IApplyData __DataIn__(QVoid data) => data;
         public override IApplyData __DataOut__(QVoid data) => data;
         public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
         {
-            return __m__.Run<Exercise1ModExpTest, QVoid, QVoid>(QVoid.Instance);
+            return __m__.Run<IntToQubitTest, QVoid, QVoid>(QVoid.Instance);
         }
     }
 
-    [SourceLocation("/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs", OperationFunctor.Body, 95, 121)]
-    public partial class Exercise2SubroutineTest : Operation<QVoid, QVoid>, ICallable
+    [SourceLocation("/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs", OperationFunctor.Body, 96, 140)]
+    public partial class fullAdderTest : Operation<QVoid, QVoid>, ICallable
     {
-        public Exercise2SubroutineTest(IOperationFactory m) : base(m)
+        public fullAdderTest(IOperationFactory m) : base(m)
         {
         }
 
@@ -484,9 +536,9 @@ namespace Lab9
 
             [Xunit.Fact()]
             [Xunit.Trait("Target", "QuantumSimulator")]
-            [Xunit.Trait("Name", "Exercise2SubroutineTest")]
-            public void Exercise2SubroutineTest()
-#line 95 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
+            [Xunit.Trait("Name", "fullAdderTest")]
+            public void fullAdderTest()
+#line 96 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
             {
                 var sim = new Microsoft.Quantum.Simulation.Simulators.QuantumSimulator();
                 if (sim is Microsoft.Quantum.Simulation.Common.SimulatorBase baseSim && this.Output != null)
@@ -496,11 +548,11 @@ namespace Lab9
 
                 try
                 {
-                    sim.Execute<Exercise2SubroutineTest, QVoid, QVoid>(QVoid.Instance);
+                    sim.Execute<fullAdderTest, QVoid, QVoid>(QVoid.Instance);
                 }
                 catch
                 {
-#line 95 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
+#line 96 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
                     Xunit.Assert.True(false, "Q# Test failed. For details see the Standard output below.");
                 }
                 finally
@@ -513,9 +565,57 @@ namespace Lab9
             }
         }
 
-        String ICallable.Name => "Exercise2SubroutineTest";
-        String ICallable.FullName => "Lab9.Exercise2SubroutineTest";
-        protected ICallable<(Int64,Int64,Int64,Double), Boolean> RunSubroutineTest__
+        String ICallable.Name => "fullAdderTest";
+        String ICallable.FullName => "Lab9.fullAdderTest";
+        protected ICallable<(Int64,Int64), IQArray<Boolean>> Microsoft__Quantum__Convert__IntAsBoolArray
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(Boolean,Boolean), Boolean> Microsoft__Quantum__Logical__Xor
+        {
+            get;
+            set;
+        }
+
+        protected Allocate Allocate__
+        {
+            get;
+            set;
+        }
+
+        protected Release Release__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(Int64,IQArray<Qubit>), QVoid> intToQubits__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<(Qubit,Qubit,Qubit,Qubit,Qubit), QVoid> fullAdder__
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Qubit, Result> Microsoft__Quantum__Intrinsic__M
+        {
+            get;
+            set;
+        }
+
+        protected ICallable Microsoft__Quantum__Canon__ApplyToEach
+        {
+            get;
+            set;
+        }
+
+        protected ICallable<Qubit, QVoid> Reset__
         {
             get;
             set;
@@ -523,50 +623,96 @@ namespace Lab9
 
         public override Func<QVoid, QVoid> __Body__ => (__in__) =>
         {
-#line 96 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            foreach (var i in new QRange(0L, 2L))
+#line 99 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            foreach (var i in new QRange(0L, 7L))
 #line hidden
             {
-#line 97 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                var validMeasure = false;
-#line 98 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                foreach (var j in new QRange(0L, 9L))
+#line 100 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                var arr = (IQArray<Boolean>)Microsoft__Quantum__Convert__IntAsBoolArray.Apply((i, 3L));
+#line 101 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                var a = arr[0L];
+#line 102 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                var b = arr[1L];
+#line 103 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                var cin = arr[2L];
+#line 106 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                var trueSum = Microsoft__Quantum__Logical__Xor.Apply((cin, Microsoft__Quantum__Logical__Xor.Apply((a, b))));
+#line 107 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                var trueCout = ((a && b) || (Microsoft__Quantum__Logical__Xor.Apply((a, b)) && cin));
 #line hidden
                 {
-#line 99 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    if (!(validMeasure))
-                    {
-#line 100 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                        validMeasure = RunSubroutineTest__.Apply((5L, 9L, 6L, 0.046875D));
-                    }
-                }
-
-#line 103 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                if (!(validMeasure))
-                {
-#line 104 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    throw new ExecutionFailException("Your implementation measured 0 too many times. If you think you have the correct implementation, please try again.");
-                }
-
-#line 107 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                validMeasure = false;
-#line 108 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                foreach (var j in new QRange(0L, 4L))
+#line 110 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                    var inputReg = Allocate__.Apply(3L);
 #line hidden
-                {
-#line 109 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    if (!(validMeasure))
+                    bool __arg1__ = true;
+                    try
                     {
-#line 110 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                        validMeasure = RunSubroutineTest__.Apply((7L, 15L, 4L, 0.03125D));
-                    }
-                }
+#line hidden
+                        {
+#line 111 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                            var outputReg = Allocate__.Apply(2L);
+#line hidden
+                            bool __arg2__ = true;
+                            try
+                            {
+#line 112 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                intToQubits__.Apply((i, inputReg));
+#line 115 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                fullAdder__.Apply((inputReg[0L], inputReg[1L], inputReg[2L], outputReg[0L], outputReg[1L]));
+#line 118 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                var resSum = (Microsoft__Quantum__Intrinsic__M.Apply(outputReg[0L]) == Result.One);
+#line 119 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                var resCout = (Microsoft__Quantum__Intrinsic__M.Apply(outputReg[1L]) == Result.One);
+#line 122 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                Microsoft__Quantum__Canon__ApplyToEach.Apply((Reset__, inputReg));
+#line 123 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                Microsoft__Quantum__Canon__ApplyToEach.Apply((Reset__, outputReg));
+#line 126 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                if ((resSum != trueSum))
+                                {
+#line 127 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                    throw new ExecutionFailException("sum is incorrect \n");
+                                }
 
-#line 113 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                if (!(validMeasure))
-                {
-#line 114 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    throw new ExecutionFailException("Your implementation measured 0 too many times. If you think you have the correct implementation, please try again.");
+#line 130 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                if ((resCout != trueCout))
+                                {
+#line 131 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                                    throw new ExecutionFailException("carry-out is incorrect \n");
+                                }
+                            }
+#line hidden
+                            catch
+                            {
+                                __arg2__ = false;
+                                throw;
+                            }
+#line hidden
+                            finally
+                            {
+                                if (__arg2__)
+                                {
+#line hidden
+                                    Release__.Apply(outputReg);
+                                }
+                            }
+                        }
+                    }
+#line hidden
+                    catch
+                    {
+                        __arg1__ = false;
+                        throw;
+                    }
+#line hidden
+                    finally
+                    {
+                        if (__arg1__)
+                        {
+#line hidden
+                            Release__.Apply(inputReg);
+                        }
+                    }
                 }
             }
 
@@ -577,21 +723,29 @@ namespace Lab9
         ;
         public override void __Init__()
         {
-            this.RunSubroutineTest__ = this.__Factory__.Get<ICallable<(Int64,Int64,Int64,Double), Boolean>>(typeof(RunSubroutineTest));
+            this.Microsoft__Quantum__Convert__IntAsBoolArray = this.__Factory__.Get<ICallable<(Int64,Int64), IQArray<Boolean>>>(typeof(global::Microsoft.Quantum.Convert.IntAsBoolArray));
+            this.Microsoft__Quantum__Logical__Xor = this.__Factory__.Get<ICallable<(Boolean,Boolean), Boolean>>(typeof(global::Microsoft.Quantum.Logical.Xor));
+            this.Allocate__ = this.__Factory__.Get<Allocate>(typeof(global::Microsoft.Quantum.Intrinsic.Allocate));
+            this.Release__ = this.__Factory__.Get<Release>(typeof(global::Microsoft.Quantum.Intrinsic.Release));
+            this.intToQubits__ = this.__Factory__.Get<ICallable<(Int64,IQArray<Qubit>), QVoid>>(typeof(intToQubits));
+            this.fullAdder__ = this.__Factory__.Get<ICallable<(Qubit,Qubit,Qubit,Qubit,Qubit), QVoid>>(typeof(fullAdder));
+            this.Microsoft__Quantum__Intrinsic__M = this.__Factory__.Get<ICallable<Qubit, Result>>(typeof(global::Microsoft.Quantum.Intrinsic.M));
+            this.Microsoft__Quantum__Canon__ApplyToEach = this.__Factory__.Get<ICallable>(typeof(global::Microsoft.Quantum.Canon.ApplyToEach<>));
+            this.Reset__ = this.__Factory__.Get<ICallable<Qubit, QVoid>>(typeof(global::Microsoft.Quantum.Intrinsic.Reset));
         }
 
         public override IApplyData __DataIn__(QVoid data) => data;
         public override IApplyData __DataOut__(QVoid data) => data;
         public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
         {
-            return __m__.Run<Exercise2SubroutineTest, QVoid, QVoid>(QVoid.Instance);
+            return __m__.Run<fullAdderTest, QVoid, QVoid>(QVoid.Instance);
         }
     }
 
-    [SourceLocation("/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs", OperationFunctor.Body, 121, 161)]
-    public partial class Exercise3ConvergentTest : Function<QVoid, QVoid>, ICallable
+    [SourceLocation("/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs", OperationFunctor.Body, 140, -1)]
+    public partial class adderTest : Operation<QVoid, QVoid>, ICallable
     {
-        public Exercise3ConvergentTest(IOperationFactory m) : base(m)
+        public adderTest(IOperationFactory m) : base(m)
         {
         }
 
@@ -609,9 +763,9 @@ namespace Lab9
 
             [Xunit.Fact()]
             [Xunit.Trait("Target", "QuantumSimulator")]
-            [Xunit.Trait("Name", "Exercise3ConvergentTest")]
-            public void Exercise3ConvergentTest()
-#line 121 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
+            [Xunit.Trait("Name", "adderTest")]
+            public void adderTest()
+#line 140 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
             {
                 var sim = new Microsoft.Quantum.Simulation.Simulators.QuantumSimulator();
                 if (sim is Microsoft.Quantum.Simulation.Common.SimulatorBase baseSim && this.Output != null)
@@ -621,11 +775,11 @@ namespace Lab9
 
                 try
                 {
-                    sim.Execute<Exercise3ConvergentTest, QVoid, QVoid>(QVoid.Instance);
+                    sim.Execute<adderTest, QVoid, QVoid>(QVoid.Instance);
                 }
                 catch
                 {
-#line 121 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
+#line 140 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
                     Xunit.Assert.True(false, "Q# Test failed. For details see the Standard output below.");
                 }
                 finally
@@ -638,15 +792,9 @@ namespace Lab9
             }
         }
 
-        String ICallable.Name => "Exercise3ConvergentTest";
-        String ICallable.FullName => "Lab9.Exercise3ConvergentTest";
-        protected ICallable<(Int64,Int64,Int64), (Int64,Int64)> Exercise3_FindPeriodCandidate__
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<(Int64,Int64,String), QVoid> Microsoft__Quantum__Diagnostics__EqualityFactI
+        String ICallable.Name => "adderTest";
+        String ICallable.FullName => "Lab9.adderTest";
+        protected ICallable<(Int64,Int64), Int64> runAdderTest__
         {
             get;
             set;
@@ -654,122 +802,27 @@ namespace Lab9
 
         public override Func<QVoid, QVoid> __Body__ => (__in__) =>
         {
-#line 123 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var tests = new QArray<(Int64,Int64,Int64,Int64,Int64)>((0L, 256L, 0L, 1L, 9L), (43L, 256L, 1L, 6L, 9L), (85L, 256L, 1L, 3L, 9L), (128L, 256L, 1L, 2L, 9L), (171L, 256L, 2L, 3L, 9L), (213L, 256L, 5L, 6L, 9L), (0L, 256L, 0L, 1L, 15L), (64L, 256L, 1L, 4L, 15L), (128L, 256L, 1L, 2L, 15L), (192L, 256L, 3L, 4L, 15L), (0L, 512L, 0L, 1L, 21L), (85L, 512L, 1L, 6L, 21L), (171L, 512L, 1L, 3L, 21L), (256L, 512L, 1L, 2L, 21L), (341L, 512L, 2L, 3L, 21L), (427L, 512L, 5L, 6L, 21L));
-#line 147 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            foreach (var test in tests?.Copy())
+#line 142 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+            foreach (var i in new QRange(0L, 20L))
 #line hidden
             {
-#line 148 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                var (testNumerator,testDenominator,trueNumerator,trueDenominator,threshold) = test;
-#line 149 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                var (numerator,denominator) = Exercise3_FindPeriodCandidate__.Apply((testNumerator, testDenominator, threshold));
-#line 150 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                if ((denominator == 0L))
-                {
-#line 151 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    throw new ExecutionFailException("You returned a denominator of 0, which should not be possible.");
-                }
-
-#line 153 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((numerator, trueNumerator, String.Format("You gave {0} / {1}, which doesn't match the expected convergent for {2} / {3}.", numerator, denominator, testNumerator, testDenominator)));
-#line 154 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((denominator, trueDenominator, String.Format("You gave {0} / {1}, which doesn't match the expected convergent for {2} / {3}.", numerator, denominator, testNumerator, testDenominator)));
-            }
-
+#line 143 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                foreach (var j in new QRange(0L, 20L))
 #line hidden
-            return QVoid.Instance;
-        }
-
-        ;
-        public override void __Init__()
-        {
-            this.Exercise3_FindPeriodCandidate__ = this.__Factory__.Get<ICallable<(Int64,Int64,Int64), (Int64,Int64)>>(typeof(Exercise3_FindPeriodCandidate));
-            this.Microsoft__Quantum__Diagnostics__EqualityFactI = this.__Factory__.Get<ICallable<(Int64,Int64,String), QVoid>>(typeof(global::Microsoft.Quantum.Diagnostics.EqualityFactI));
-        }
-
-        public override IApplyData __DataIn__(QVoid data) => data;
-        public override IApplyData __DataOut__(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
-        {
-            return __m__.Run<Exercise3ConvergentTest, QVoid, QVoid>(QVoid.Instance);
-        }
-    }
-
-    [SourceLocation("/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs", OperationFunctor.Body, 161, 171)]
-    public partial class Exercise4PeriodTest : Operation<QVoid, QVoid>, ICallable
-    {
-        public Exercise4PeriodTest(IOperationFactory m) : base(m)
-        {
-        }
-
-        public class QuantumSimulator
-        {
-            public QuantumSimulator(Xunit.Abstractions.ITestOutputHelper Output)
-            {
-                this.Output = Output;
-            }
-
-            internal Xunit.Abstractions.ITestOutputHelper Output
-            {
-                get;
-            }
-
-            [Xunit.Fact()]
-            [Xunit.Trait("Target", "QuantumSimulator")]
-            [Xunit.Trait("Name", "Exercise4PeriodTest")]
-            public void Exercise4PeriodTest()
-#line 161 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            {
-                var sim = new Microsoft.Quantum.Simulation.Simulators.QuantumSimulator();
-                if (sim is Microsoft.Quantum.Simulation.Common.SimulatorBase baseSim && this.Output != null)
                 {
-                    baseSim.OnLog += this.Output.WriteLine;
-                }
-
-                try
-                {
-                    sim.Execute<Exercise4PeriodTest, QVoid, QVoid>(QVoid.Instance);
-                }
-                catch
-                {
-#line 161 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    Xunit.Assert.True(false, "Q# Test failed. For details see the Standard output below.");
-                }
-                finally
-                {
-                    if (sim is IDisposable disposeSim)
+#line 145 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                    var trueSum = (i + j);
+#line 146 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                    var adderSum = runAdderTest__.Apply((i, j));
+#line 148 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                    if ((trueSum != adderSum))
                     {
-                        disposeSim.Dispose();
+#line 149 "/Users/khaledkamal/Documents/ee193-quantum/finalProject/Lab9Tests.qs"
+                        throw new ExecutionFailException(String.Format("{0} + {1} sum is incorrect: got {2}, expected {3}\n", i, j, adderSum, trueSum));
                     }
                 }
             }
-        }
 
-        String ICallable.Name => "Exercise4PeriodTest";
-        String ICallable.FullName => "Lab9.Exercise4PeriodTest";
-        protected ICallable<(Int64,Int64), Int64> Exercise4_FindPeriod__
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<(Int64,Int64,String), QVoid> Microsoft__Quantum__Diagnostics__EqualityFactI
-        {
-            get;
-            set;
-        }
-
-        public override Func<QVoid, QVoid> __Body__ => (__in__) =>
-        {
-#line 162 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var period = Exercise4_FindPeriod__.Apply((9L, 5L));
-#line 163 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((period, 6L, "Incorrect period found."));
-#line 165 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            period = Exercise4_FindPeriod__.Apply((15L, 7L));
-#line 166 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((period, 4L, "Incorrect period found."));
 #line hidden
             return QVoid.Instance;
         }
@@ -777,224 +830,14 @@ namespace Lab9
         ;
         public override void __Init__()
         {
-            this.Exercise4_FindPeriod__ = this.__Factory__.Get<ICallable<(Int64,Int64), Int64>>(typeof(Exercise4_FindPeriod));
-            this.Microsoft__Quantum__Diagnostics__EqualityFactI = this.__Factory__.Get<ICallable<(Int64,Int64,String), QVoid>>(typeof(global::Microsoft.Quantum.Diagnostics.EqualityFactI));
+            this.runAdderTest__ = this.__Factory__.Get<ICallable<(Int64,Int64), Int64>>(typeof(runAdderTest));
         }
 
         public override IApplyData __DataIn__(QVoid data) => data;
         public override IApplyData __DataOut__(QVoid data) => data;
         public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
         {
-            return __m__.Run<Exercise4PeriodTest, QVoid, QVoid>(QVoid.Instance);
-        }
-    }
-
-    [SourceLocation("/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs", OperationFunctor.Body, 171, -1)]
-    public partial class Exercise5FactorTest : Function<QVoid, QVoid>, ICallable
-    {
-        public Exercise5FactorTest(IOperationFactory m) : base(m)
-        {
-        }
-
-        public class QuantumSimulator
-        {
-            public QuantumSimulator(Xunit.Abstractions.ITestOutputHelper Output)
-            {
-                this.Output = Output;
-            }
-
-            internal Xunit.Abstractions.ITestOutputHelper Output
-            {
-                get;
-            }
-
-            [Xunit.Fact()]
-            [Xunit.Trait("Target", "QuantumSimulator")]
-            [Xunit.Trait("Name", "Exercise5FactorTest")]
-            public void Exercise5FactorTest()
-#line 171 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            {
-                var sim = new Microsoft.Quantum.Simulation.Simulators.QuantumSimulator();
-                if (sim is Microsoft.Quantum.Simulation.Common.SimulatorBase baseSim && this.Output != null)
-                {
-                    baseSim.OnLog += this.Output.WriteLine;
-                }
-
-                try
-                {
-                    sim.Execute<Exercise5FactorTest, QVoid, QVoid>(QVoid.Instance);
-                }
-                catch
-                {
-#line 171 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                    Xunit.Assert.True(false, "Q# Test failed. For details see the Standard output below.");
-                }
-                finally
-                {
-                    if (sim is IDisposable disposeSim)
-                    {
-                        disposeSim.Dispose();
-                    }
-                }
-            }
-        }
-
-        String ICallable.Name => "Exercise5FactorTest";
-        String ICallable.FullName => "Lab9.Exercise5FactorTest";
-        protected ICallable<(Int64,Int64,String), QVoid> Microsoft__Quantum__Diagnostics__EqualityFactI
-        {
-            get;
-            set;
-        }
-
-        protected ICallable<(Int64,Int64,Int64), Int64> Exercise5_FindFactor__
-        {
-            get;
-            set;
-        }
-
-        public override Func<QVoid, QVoid> __Body__ => (__in__) =>
-        {
-#line 173 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((Exercise5_FindFactor__.Apply((9L, 2L, 6L)), -(2L), "Your function should have returned -2 because this period results in a factor of 1."));
-#line 175 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((Exercise5_FindFactor__.Apply((9L, 4L, 3L)), -(1L), "Your function should have returned -1 because this period is odd."));
-#line 177 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((Exercise5_FindFactor__.Apply((9L, 7L, 3L)), -(1L), "Your function should have returned -1 because this period is odd."));
-#line 179 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            var factor = Exercise5_FindFactor__.Apply((15L, 2L, 4L));
-#line 180 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 5L) && (factor != 3L)))
-            {
-#line 182 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 5 but got {0}.", factor));
-            }
-
-#line 185 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((15L, 4L, 2L));
-#line 186 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 5L) && (factor != 3L)))
-            {
-#line 188 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 5 but got {0}.", factor));
-            }
-
-#line 191 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((15L, 7L, 4L));
-#line 192 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 5L) && (factor != 3L)))
-            {
-#line 194 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 5 but got {0}.", factor));
-            }
-
-#line 197 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((15L, 8L, 4L));
-#line 198 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 5L) && (factor != 3L)))
-            {
-#line 200 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 5 but got {0}.", factor));
-            }
-
-#line 203 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((15L, 11L, 2L));
-#line 204 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 5L) && (factor != 3L)))
-            {
-#line 206 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 5 but got {0}.", factor));
-            }
-
-#line 209 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((15L, 13L, 4L));
-#line 210 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 5L) && (factor != 3L)))
-            {
-#line 212 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 5 but got {0}.", factor));
-            }
-
-#line 215 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((21L, 2L, 6L));
-#line 216 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 7L) && (factor != 3L)))
-            {
-#line 218 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 7 but got {0}.", factor));
-            }
-
-#line 221 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((Exercise5_FindFactor__.Apply((21L, 4L, 3L)), -(1L), "Your function should have returned -1 because this period is odd."));
-#line 223 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((Exercise5_FindFactor__.Apply((21L, 5L, 6L)), -(2L), "Your function should have returned -2 because this period results in a factor of 1."));
-#line 225 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((21L, 8L, 2L));
-#line 226 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 7L) && (factor != 3L)))
-            {
-#line 228 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 7 but got {0}.", factor));
-            }
-
-#line 231 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((21L, 10L, 6L));
-#line 232 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 7L) && (factor != 3L)))
-            {
-#line 234 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 7 but got {0}.", factor));
-            }
-
-#line 237 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((21L, 11L, 6L));
-#line 238 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 7L) && (factor != 3L)))
-            {
-#line 240 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 7 but got {0}.", factor));
-            }
-
-#line 243 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((21L, 13L, 2L));
-#line 244 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 7L) && (factor != 3L)))
-            {
-#line 246 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 7 but got {0}.", factor));
-            }
-
-#line 249 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((Exercise5_FindFactor__.Apply((21L, 16L, 3L)), -(1L), "Your function should have returned -1 because this period is odd."));
-#line 251 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((Exercise5_FindFactor__.Apply((21L, 17L, 6L)), -(2L), "Your function should have returned -2 because this period results in a factor of 1."));
-#line 253 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            factor = Exercise5_FindFactor__.Apply((21L, 19L, 6L));
-#line 254 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            if (((factor != 7L) && (factor != 3L)))
-            {
-#line 256 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-                throw new ExecutionFailException(String.Format("You returned an incorrect factor, expected 3 or 7 but got {0}.", factor));
-            }
-
-#line 259 "/Users/khaledkamal/Downloads/Lab9/Lab9Tests.qs"
-            Microsoft__Quantum__Diagnostics__EqualityFactI.Apply((Exercise5_FindFactor__.Apply((21L, 20L, 2L)), -(2L), "Your function should have returned -2 because this period results in a factor of 1."));
-#line hidden
-            return QVoid.Instance;
-        }
-
-        ;
-        public override void __Init__()
-        {
-            this.Microsoft__Quantum__Diagnostics__EqualityFactI = this.__Factory__.Get<ICallable<(Int64,Int64,String), QVoid>>(typeof(global::Microsoft.Quantum.Diagnostics.EqualityFactI));
-            this.Exercise5_FindFactor__ = this.__Factory__.Get<ICallable<(Int64,Int64,Int64), Int64>>(typeof(Exercise5_FindFactor));
-        }
-
-        public override IApplyData __DataIn__(QVoid data) => data;
-        public override IApplyData __DataOut__(QVoid data) => data;
-        public static System.Threading.Tasks.Task<QVoid> Run(IOperationFactory __m__)
-        {
-            return __m__.Run<Exercise5FactorTest, QVoid, QVoid>(QVoid.Instance);
+            return __m__.Run<adderTest, QVoid, QVoid>(QVoid.Instance);
         }
     }
 }
